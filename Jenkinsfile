@@ -1,4 +1,4 @@
-node {
+node (label: 'slave') {
   // define the secrets and the env variables
   def secrets = [
       [$class: 'VaultSecret', path: 'kv/example', secretValues: [
